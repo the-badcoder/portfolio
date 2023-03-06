@@ -1,50 +1,38 @@
 import React from "react";
 import "./SideBar.css";
-import $ from "jquery";
-import { useState, useEffect } from 'react';
-export const SideBar = () => {
 
-  const [activeMenu, setActiveMenu] = useState(false);
+
+import { useState, useEffect } from "react";
+export const SideBar = () => {
   const [menuWrapperClass, setMenuWrapperClass] = useState("menu-wrapper show");
   const [menuIcon, setmMenuIcon] = useState("active");
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    // Add event listener to update windowWidth state on resize
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  const handleResize = () => {
-    setWindowWidth(window.innerWidth);
-  };
-
-   
 
   function handleSubmit(e) {
     e.preventDefault();
-    if(menuIcon=='active'){
-      setMenuWrapperClass("menu-wrapper hide")
+    if (menuIcon == "active") {
+      setMenuWrapperClass("menu-wrapper hide");
       setmMenuIcon("");
-    }
-    else{
-      setMenuWrapperClass("menu-wrapper show")
+    } else {
+      setMenuWrapperClass("menu-wrapper show");
       setmMenuIcon("active");
     }
-    console.log('You clicked submit.');
-    
+    console.log("You clicked submit.");
+
     e.stopPropagation(); //stop trigger parent
-   }
+  }
 
   return (
     <div>
       <div id="overlay"></div>
-      <div className="topbar">SM Hassan</div>
       <div className="main_page">
         <div className="left show">
           <div className={menuWrapperClass}>
             <div className="menu-icon-wrapper">
-              <a href="#" onClick={(e)=>handleSubmit(e)} className={"menu-icon " + menuIcon}></a>
+              <a
+                href="#"
+                onClick={(e) => handleSubmit(e)}
+                className={"menu-icon " + menuIcon}
+              ></a>
             </div>
             <ul className="menu">
               <li className="bold name-section">
