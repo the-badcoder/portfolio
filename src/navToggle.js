@@ -40,6 +40,7 @@ $(document).ready(function () {
   responsive();
 
   $(".menu-icon").click(function (e) {
+    console.log("clicked")
     e.preventDefault();
     $(this).toggleClass("active");
 
