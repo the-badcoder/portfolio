@@ -90,7 +90,7 @@ export const SideBar = () => {
                   href="#awards"
                   className="waves-effect waves-dark red-text"
                 >
-                  <i className="large material-icons">equalizer</i>
+                  <i className="large material-icons">grade</i>
                   <span>Awards</span>
                 </a>
               </li>
@@ -100,7 +100,7 @@ export const SideBar = () => {
                   href="#education"
                   className="waves-effect waves-dark orange-text"
                 >
-                  <i className="large material-icons">equalizer</i>
+                  <i className="large material-icons">school</i>
                   <span>Education</span>
                 </a>
               </li>
@@ -110,20 +110,11 @@ export const SideBar = () => {
                   href="#contact"
                   className="waves-effect waves-dark brown-text"
                 >
-                  <i className="large material-icons">equalizer</i>
+                  <i className="large material-icons">mail</i>
                   <span>Contact</span>
                 </a>
               </li>
-              <li className="bold">
-                <a
-                  aria-label="Navigate to the Contact section"
-                  href="#blog"
-                  className="waves-effect waves-dark yellow-text text-dark-3"
-                >
-                  <i className="large material-icons">equalizer</i>
-                  <span>Blog</span>
-                </a>
-              </li>
+               
               <li className="bold">
                 <a
                   aria-label="Open Andrew's Resume in a new tab"
@@ -131,7 +122,7 @@ export const SideBar = () => {
                   target="_blank"
                   className="waves-effect waves-dark grey-text text-darken-3"
                 >
-                  <i className="large material-icons">equalizer</i>
+                  <i className="large material-icons">description</i>
                   <span>Resume</span>
                 </a>
               </li>

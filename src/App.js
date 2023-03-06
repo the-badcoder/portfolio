@@ -9,6 +9,9 @@ function App() {
     <div className="App">
       <SideBar />
       <Home />
+      <Home />
+      <Home />
+      <Home />
     </div>
   );
 }
